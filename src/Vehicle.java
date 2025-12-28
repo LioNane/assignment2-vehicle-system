@@ -3,12 +3,9 @@ public abstract class Vehicle {
     protected int year;
     protected Driver driver;
 
-    protected Vehicle(String brand, int year){
+    protected Vehicle(String brand, int year, Driver driver){
         this.brand = brand;
         this.year = year;
-    }
-
-    protected void SetDriver(Driver driver){
         this.driver = driver;
     }
 

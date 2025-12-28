@@ -1,14 +1,10 @@
 void main() {
-    Car car = new Car("Audi", 2014, 4, "Petrol");
-    Motorcycle motorcycle = new Motorcycle("BMW", 2007, true);
-    Truck truck = new Truck("Kamaz", 2003, 8.0, 2);
-
     Driver john = new Driver("John", "1");
     Driver mike = new Driver("Mike", "2");
 
-    car.SetDriver(john);
-    motorcycle.SetDriver(john);
-    truck.SetDriver(mike);
+    Car car = new Car("Audi", 2014, john,4, "Petrol");
+    Motorcycle motorcycle = new Motorcycle("BMW", 2007, john, true);
+    Truck truck = new Truck("Kamaz", 2003, mike, 8.0, 2);
 
     ArrayList<Vehicle> vehicles = new ArrayList<>(3);
     vehicles.add(0, car);
